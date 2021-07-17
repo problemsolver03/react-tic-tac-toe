@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 
 ## Game demo
-## [https://react-tic-tac-toe-86f3e.web.app/]
+## https://react-tic-tac-toe-86f3e.web.app/
 
 
 ## Available Scripts
