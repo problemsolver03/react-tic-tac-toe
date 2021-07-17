@@ -1,13 +1,93 @@
+:root {
+  --darkBlack: #001219;
+  --black: #14213d;
+  --orange: #fca311;
+  --grey: #e5e5e5;
+  --purple: #7b2cbf;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Lato", sans-serif;
+  background-color: var(--black);
+  color: #fff;
+  padding: 12px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.center {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 20%);
+}
+
+.App .flex {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 0;
+  grid-row-gap: 0;
+  width: 400px;
+}
+
+.flex .tile {
+  height: 120px;
+  text-align: center;
+  border: 1px solid var(--grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-center {
+  text-align: center;
+}
+.tile:hover {
+  background-color: var(--darkBlack);
+}
+
+.tile .btn {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  font-size: 40px;
+  border: 0;
+}
+
+.btn.selected.xIcon {
+  background-color: var(--orange);
+}
+.btn.selected.oIcon {
+  background-color: var(--purple);
+}
+
+.reset {
+  float: right;
+  padding: 4px 8px;
+  background-color: var(--orange);
+  border: 1px solid var(--orange);
+  border-radius: 4px;
+  margin-top: 14px;
+}
+.header {
+  font-weight: 400;
+}
+.header small {
+  font-weight: 300 !important ;
+}
+button:disabled {
+  color: black;
+}
+.status {
+  display: block;
+  width: max-content;
+  margin-top: 20px;
+  margin-bottom: -40px;
+  background-color: #284b63;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 450px) {
+  .App .flex {
+    width: 90vw;
+  }
+  .center {
+    transform: translate(-50%, 5%);
+  }
 }

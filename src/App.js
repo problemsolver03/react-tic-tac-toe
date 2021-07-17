@@ -1,23 +1,11 @@
-import logo from './logo.svg';
-import './App.css';
+import GameComponent from "./GameComponent";
+import Header from "./Header";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App center">
+      <Header title="Tic-tac-toe" description="Built with react." />
+      <GameComponent />
     </div>
   );
 }
