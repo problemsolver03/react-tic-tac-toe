@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 ## Game demo
 ## https://react-tic-tac-toe-86f3e.web.app/
 
+## Screenshots
+
+![Screenshot 2021-07-17 134246](https://user-images.githubusercontent.com/64726338/126030795-bed2fa40-b6a3-4f4f-9297-7c11183a21d1.png)
+
 
 ## Available Scripts
 
